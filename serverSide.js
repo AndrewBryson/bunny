@@ -18,7 +18,7 @@ context.on('ready', function () {
 			
 			db.newstuff.insert( { a: 1 }, function () {
 				console.log('SERVER, inserted new data');
-				var replyData = { andy: new Date() };
+				var replyData = { newMessage: new Date() };
 				reply.write(JSON.stringify(replyData), 'utf8');
 			});
 			
