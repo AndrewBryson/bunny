@@ -15,7 +15,7 @@ app.get('/', function (req, res) {
 	var request = context.socket('REQ');
 		
 	request.connect(messageName, function () {
-		var data = { message: 'From client' };
+		var data = { message: 'From client:' };
 		request.write(JSON.stringify(data), 'utf8');
 	});
 	
