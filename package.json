@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"start": "node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "amqplib": "^0.5.1",
+    "async": "^2.1.2",
     "express": "^4.10.2",
     "mongojs": "^0.17.0",
     "rabbit.js": "^0.4.2"
